@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestASBConnection.Properties" GeneratedClassName="ApplicationsSetting">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=dsm09.jmadsm.dk;Initial Catalog=JMA_base;Persist Security Info=True;User ID=res_base;Password=89JMAdsm89JMAdsm;TrustServerCertificate=True;</Value>
+    </Setting>
+    <Setting Name="ApiEndPoint" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://event-proxy-service.jma-dev.net/api/v1/events/</Value>
+    </Setting>
+    <Setting Name="BearerToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3|qa4au1XriJ5wXJRRQi5kTfhJ4OUJfVuBCczVZQW23095ae57</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

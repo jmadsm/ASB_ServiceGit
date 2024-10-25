@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TestASBConnection": {
+      "commandName": "Project",
+      "commandLineArgs": "x25077"
+    }
+  }
+}
