@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestASBConnection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bee7edc52f97e72672a3c03225d1e8c327ffa4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f238f79e430328c38ba6a5ad400bafaeb57c2c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestASBConnection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestASBConnection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
