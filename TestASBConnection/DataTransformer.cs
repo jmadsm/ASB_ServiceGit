@@ -13,8 +13,7 @@ namespace TestASBConnection
         // Method to convert a list of UpdateMessage objects to JSON
         public string ConvertToJson(object updates)
         {
-            var obj = new { topic = "items", data = updates };
-            var batchObject = new List<object>{ obj };
+            var batchObject = new { topic = "items", data = updates };
             // Formatting.Indented is used to make the JSON message more readable
             return JsonConvert.SerializeObject(batchObject, Formatting.Indented);
         }

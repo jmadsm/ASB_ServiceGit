@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+
 
 namespace TestASBConnection
 {
@@ -13,6 +14,7 @@ namespace TestASBConnection
         private readonly string _connectionString;
         // Name of the topic
         private readonly string _topicName;
+
        
 
         // Constructor for the AzureServiceBusSender class
@@ -42,7 +44,8 @@ namespace TestASBConnection
             await client.SendAsync(request)
                 .ContinueWith(responseTask =>
                 {
-                    Console.WriteLine("Response: {0}", responseTask.Result);
+                    Console.WriteLine("Response: {0}",(int) responseTask.Result.StatusCode);
+                    Program.ExitStatus = (int)responseTask.Result.StatusCode;
                 });
         }
     }

@@ -9,6 +9,7 @@ namespace TestASBConnection
 {   
     public class Program
     {
+        public static int ExitStatus = 0;
         // Main method
         private static async Task<int> Main(string[] args)
         {
@@ -62,7 +63,7 @@ namespace TestASBConnection
                 if (newUpdate.total != 0)
                     await SendNewUpdate(newUpdate);
 
-                return offset; // Return the total number of records sent as the exit code
+                return ExitStatus; // Return the total number of records sent as the exit code
             }
 
             catch (Exception ex)

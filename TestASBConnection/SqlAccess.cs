@@ -41,7 +41,7 @@ namespace TestASBConnection
                             // Add the update to the list
                             updates.Add(new UpdateMessage { item = item, updateType = updateType, department = department });
 
-                            Console.WriteLine(item, updateType, department);
+                           // Console.WriteLine(item, updateType, department);
 
                      
                         }
