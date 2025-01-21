@@ -36,7 +36,7 @@ namespace TestASBConnection
                 BaseAddress = new Uri(_connectionString),
             };
             // Sets authorization header as bearer
-            client.DefaultRequestHeaders.Add("Authorization", _bearerToken);
+            client.DefaultRequestHeaders.Add("Authorization", string.Format("Bearer {0}", _bearerToken));
             client.DefaultRequestHeaders.Add("Accept", "application/json");
             
             // Creates a new HttpRequestMessage object
