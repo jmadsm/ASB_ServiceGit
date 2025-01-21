@@ -15,13 +15,16 @@ namespace TestASBConnection
         // Name of the topic
         private readonly string _topicName;
 
+        private readonly string _bearerToken;
+
        
 
         // Constructor for the AzureServiceBusSender class
-        public AzureServiceBusSender(string connectionString, string topicName)
+        public AzureServiceBusSender(string connectionString, string topicName, string bearerToken)
         {
             _connectionString = connectionString;
             _topicName = topicName;
+            _bearerToken = bearerToken;
         }
 
         // Method to send a message to the Azure Service Bus topic
@@ -33,7 +36,7 @@ namespace TestASBConnection
                 BaseAddress = new Uri(_connectionString),
             };
             // Sets authorization header as bearer
-            client.DefaultRequestHeaders.Add("Authorization", "Bearer 3|qa4au1XriJ5wXJRRQi5kTfhJ4OUJfVuBCczVZQW23095ae57");
+            client.DefaultRequestHeaders.Add("Authorization", _bearerToken);
             client.DefaultRequestHeaders.Add("Accept", "application/json");
             
             // Creates a new HttpRequestMessage object

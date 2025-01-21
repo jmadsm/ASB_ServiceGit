@@ -44,7 +44,7 @@ namespace TestASBConnection.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3|qa4au1XriJ5wXJRRQi5kTfhJ4OUJfVuBCczVZQW23095ae57")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10|xMLw2Vc8D8Ol9ZMjiOKmuaVr9OhSSNFOtQfLmuv067459809")]
         public string BearerToken {
             get {
                 return ((string)(this["BearerToken"]));

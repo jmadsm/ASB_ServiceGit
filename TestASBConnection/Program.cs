@@ -24,6 +24,7 @@ namespace TestASBConnection
             string sqlConnectionString = Properties.ApplicationsSetting.Default.SqlConnection; 
             string asbConnectionString = Properties.ApplicationsSetting.Default.ApiEndPoint ;
             string topicName = "items";
+            string bearerToken = Properties.ApplicationsSetting.Default.BearerToken;
             // Json Batch size
             int batchSize = 2048;
 
@@ -32,7 +33,7 @@ namespace TestASBConnection
                 // Data Access Layer
                 SqlAccess dataAccess = new SqlAccess(sqlConnectionString);
                 DataTransformer transformer = new DataTransformer();
-                AzureServiceBusSender sender = new AzureServiceBusSender(asbConnectionString, topicName);
+                AzureServiceBusSender sender = new AzureServiceBusSender(asbConnectionString, topicName, bearerToken);
 
                 int offset = 0;
                 List<UpdateMessage> updates;
@@ -76,8 +77,9 @@ namespace TestASBConnection
             {
                 string asbConnectionString = Properties.ApplicationsSetting.Default.ApiEndPoint;
                 string topicName = "items";
+                string bearerToken = Properties.ApplicationsSetting.Default.BearerToken;
                 DataTransformer transformer = new DataTransformer();
-                AzureServiceBusSender sender = new AzureServiceBusSender(asbConnectionString, topicName);
+                AzureServiceBusSender sender = new AzureServiceBusSender(asbConnectionString, topicName, bearerToken);
                 // Convert to JSON
                 string jsonMessage = transformer.ConvertToJson(updates);
                 int messageSize = transformer.GetMessageSizeInBytes(jsonMessage);
