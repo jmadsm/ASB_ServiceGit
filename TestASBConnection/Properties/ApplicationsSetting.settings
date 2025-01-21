@@ -9,7 +9,7 @@
       <Value Profile="(Default)">https://event-proxy-service.jma-dev.net/api/v1/events/</Value>
     </Setting>
     <Setting Name="BearerToken" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">10|xMLw2Vc8D8Ol9ZMjiOKmuaVr9OhSSNFOtQfLmuv067459809</Value>
+      <Value Profile="(Default)">Bearer 10|xMLw2Vc8D8Ol9ZMjiOKmuaVr9OhSSNFOtQfLmuv067459809</Value>
     </Setting>
   </Settings>
 </SettingsFile>
