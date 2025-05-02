@@ -26,7 +26,7 @@ namespace TestASBConnection
             string topicName = "items";
             string bearerToken = Properties.ApplicationsSetting.Default.BearerToken;
             // Json Batch size
-            int batchSize = 2048;
+            int batchSize = 100;
 
             try
             {
