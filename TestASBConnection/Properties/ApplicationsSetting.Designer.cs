@@ -12,7 +12,7 @@ namespace TestASBConnection.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.12.0.0")]
     internal sealed partial class ApplicationsSetting : global::System.Configuration.ApplicationSettingsBase {
         
         private static ApplicationsSetting defaultInstance = ((ApplicationsSetting)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new ApplicationsSetting())));
@@ -35,7 +35,7 @@ namespace TestASBConnection.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://event-proxy-service.jma-dev.net/api/v1/events/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://event-proxy.jma-dev.net/api/v1/events/")]
         public string ApiEndPoint {
             get {
                 return ((string)(this["ApiEndPoint"]));
@@ -44,7 +44,7 @@ namespace TestASBConnection.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10|xMLw2Vc8D8Ol9ZMjiOKmuaVr9OhSSNFOtQfLmuv067459809")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3|w7gaQSmqhVNsGUdso4DHXjazBSS3CYtUtYHEqMgycb7ece74")]
         public string BearerToken {
             get {
                 return ((string)(this["BearerToken"]));
